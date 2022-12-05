@@ -6,7 +6,7 @@
 /*   By: dhubleur <dhubleur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 13:33:41 by dhubleur          #+#    #+#             */
-/*   Updated: 2022/12/05 14:01:43 by dhubleur         ###   ########.fr       */
+/*   Updated: 2022/12/05 14:02:27 by dhubleur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	answer(t_list *list)
 	putstr("] \"Ah ok !\"\n", 1);
 }
 
-void	solo()
+void	solo(void)
 {
 	putstr("[0 -> Assemblée] \"Vous voulez un Oui'Quitte ?\"\n", 1);
 	putstr("[Assemblée -> 0] \"Non !\"\n", 1);
