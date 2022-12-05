@@ -6,7 +6,7 @@
 /*   By: dhubleur <dhubleur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 13:14:57 by dhubleur          #+#    #+#             */
-/*   Updated: 2022/12/05 13:39:28 by dhubleur         ###   ########.fr       */
+/*   Updated: 2022/12/05 14:00:40 by dhubleur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,9 @@ int	main(int ac, char **av)
 	if (!is_int(av[1]))
 		error("Error: argument\n");
 	players = atoi(av[1]);
-	if (players < 2)
+	if (players < 1)
 		error("Error: argument\n");
+	if (players == 1)
+		solo();
 	start_game(players);
 }
